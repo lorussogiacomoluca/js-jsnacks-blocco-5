@@ -21,3 +21,12 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+console.log("-".repeat(50));
+const findClass = (array, name) =>{
+  const foundPerson = array.find(item => item.name == name)
+  return foundPerson.class
+}
+
+const marcoLanci = findClass(students, 'Marco Lanci')
+console.log(marcoLanci);
